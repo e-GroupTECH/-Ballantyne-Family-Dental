@@ -77,8 +77,9 @@
 
 <!-- ============ Hero ============ -->
 <section class="hero" id="top">
-  <video autoplay muted loop playsinline poster="assets/images/office-photo.webp">
-    <source src="assets/video/hero-video.mp4" type="video/mp4">
+  <video id="heroVideo" autoplay muted loop playsinline poster="assets/images/office-photo.webp">
+    <source src="assets/video/hero-loop.webm" type="video/webm">
+    <source src="assets/video/hero-loop.mp4" type="video/mp4">
   </video>
   <div class="container">
     <div class="hero-content" data-reveal>
@@ -249,8 +250,8 @@
     </div>
     <div class="gallery-grid" data-reveal>
       <div class="gallery-video">
-        <video id="showcaseVideo" muted loop playsinline poster="assets/images/office-photo.webp">
-          <source src="assets/video/hero-video.mp4" type="video/mp4">
+        <video id="showcaseVideo" muted loop playsinline poster="assets/images/office-photo.webp" preload="none">
+          <source src="assets/video/showcase.mp4" type="video/mp4">
         </video>
         <div class="play-btn" id="playBtn">
           <div class="circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
@@ -264,56 +265,65 @@
   </div>
 </section>
 
-<!-- ============ Testimonials ============ -->
+<!-- ============ Video testimonials ============ -->
 <section class="section section--muted" id="reviews">
   <div class="container">
     <div class="section-head" data-reveal>
       <span class="eyebrow">Patient Reviews</span>
-      <h2>Loved by families across Ballantyne</h2>
+      <h2>Hear Why Patients Love Ballantyne Family Dental</h2>
+      <p>Real patients, in their own words.</p>
     </div>
-    <div class="testimonial-track">
-      <div class="testimonial-card" data-reveal>
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-        </div>
-        <p>"Dr Patel and her team are AMAZING — the office is such a fun environment! I actually look forward to my appointments now."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">J</div>
-          <div><strong>Jessica M.</strong><span>Google Review</span></div>
+    <div class="video-carousel" data-reveal>
+      <button type="button" class="vc-arrow vc-prev" id="vcPrev" aria-label="Previous video">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7 1.4-1.4L10.8 12l5.6-5.6z"/></svg>
+      </button>
+      <div class="vc-stage">
+        <div class="vc-track" id="vcTrack">
+          <div class="vc-slide" data-yt="lHTJTlQQl0o">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/lHTJTlQQl0o.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <div class="vc-slide" data-yt="CA-RE1bujWM">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/CA-RE1bujWM.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <div class="vc-slide" data-yt="iqGgV8C9ApA">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/iqGgV8C9ApA.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <div class="vc-slide" data-yt="V5s3GdnnrHo">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/V5s3GdnnrHo.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <div class="vc-slide" data-yt="zwQ63qZhfOA">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/zwQ63qZhfOA.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <div class="vc-slide" data-yt="co1kNSiZQO4">
+            <button type="button" class="vc-play" aria-label="Play patient testimonial video">
+              <img src="assets/images/testimonials/co1kNSiZQO4.jpg" alt="Patient testimonial video thumbnail" loading="lazy">
+              <span class="vc-play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-        </div>
-        <p>"The entire staff is wonderful — they genuinely care about you as a person, not just a patient. Best dental experience we've had."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">R</div>
-          <div><strong>Robert T.</strong><span>Google Review</span></div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="testimonial-stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.6 6.8L12 16.9 5.8 20.4l1.6-6.8L2.2 9l6.9-.7z"/></svg>
-        </div>
-        <p>"From the front desk to the chair, everything felt easy and welcoming. Scheduled online in minutes and got seen the same week."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">A</div>
-          <div><strong>Amanda K.</strong><span>Google Review</span></div>
-        </div>
-      </div>
+      <button type="button" class="vc-arrow vc-next" id="vcNext" aria-label="Next video">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7-1.4-1.4L13.2 12 7.6 6.4z"/></svg>
+      </button>
+    </div>
+    <div class="vc-meta">
+      <div class="vc-dots" id="vcDots"></div>
+      <span class="vc-counter" id="vcCounter">Slide 1 of 6</span>
     </div>
   </div>
 </section>
